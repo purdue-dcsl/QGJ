@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## QGJ
 
 ### Description
@@ -17,3 +18,6 @@ The operational workflow of using QGJ for doing a fuzz-based injection of apps o
 <img width="600" src="./imgs/design__comm_model-a.png" align="middle">
 <img width="600" src="./imgs/design__comm_model-b.png" align="middle">
 
+=======
+# QGJ
+>>>>>>> 6b60623ae61ac40a14612d987a92c93f999b599e
