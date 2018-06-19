@@ -10,10 +10,7 @@ public class Main {
 
     static BufferedWriter out;
     static BufferedWriter outDetailed;
-
-//    static String path = "/home/ebarsallo/Code/purdue.edu/699-research/android-wear/Squibble/logs/dsn-4/";
-    static String path = "/home/ebarsallo/Code/purdue.edu/699-research/android-wear/Squibble/logs/dsn-4/clean";
-//    static String path = "/home/ebarsallo/Code/purdue.edu/699-research/android-wear/Squibble/logs/dsn-4/expt3-fake";
+    static String path = "./logs";
 
     static HashMap<String, Integer> map;
 
@@ -65,8 +62,6 @@ public class Main {
                 gComponentName = cn;
             }
 
-//            System.out.println(String.format ("%s * %s * %s * %s * %s *",
-//                    m1.group(1), m1.group(2), m1.group(3), m1.group(4), m1.group(5)));
         } else if (m2.find())  {
 
             String rawEx = m2.group(1) + "Exception";
@@ -79,9 +74,6 @@ public class Main {
 
             int c = map.containsKey(cleanEx) ? map.get(cleanEx) : 0;
             map.put(cleanEx, ++c);
-
-
-//            System.out.println(String.format("\t -->%s<-- * %s", cleanEx, line));
 
             String str[] = gComponentName.split("/");
             line = String.format("%s\t%s\t%d\t%s\t%s\t%s", gFileName, str[0], gCmp, str[1], cleanEx, line);
